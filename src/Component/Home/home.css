@@ -1,0 +1,151 @@
+:root {
+  --PrimaryColor: hsla(47, 68%, 38%, 0.836);
+  --SecondaryColor: hsla(41, 100%, 33%, 0.441);
+  --gradientColor: linear-gradient(to right, hsla(47, 68%, 38%, 0.836), hsla(41, 100%, 33%, 0.441));
+  --whiteColor: #fff;
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: rgb(240,240,240);
+  --cardBG: rgb(225,225,235);
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.home .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(93, 89, 64);
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.home video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .homeContent {
+  width: 100%;
+  height: 100%;
+  padding: 8rem 1.5rem 3rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  color: var(--whiteColor);
+  z-index: 100;
+}
+.home .homeContent .textDiv {
+  padding: 2rem 0;
+}
+.home .homeContent .textDiv .smallText {
+  font-size: 25px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.home .homeContent .textDiv .smallText:hover {
+  color: var(--PrimaryColor);
+}
+.home .homeContent .textDiv .homeTitle {
+  position: relative;
+  font-size: 2.2rem;
+}
+.home .homeContent .cardDiv {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  background: hsla(41, 40%, 65%, 0.579);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 3rem;
+}
+.home .homeContent .cardDiv a {
+  color: var(--whiteColor);
+  font-weight: 700;
+}
+.home .homeContent .cardDiv .leftContent {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-right: 3px solid #fff;
+  transition: all 0.3s ease;
+}
+.home .homeContent .cardDiv .leftContent .btn:hover {
+  color: var(--PrimaryColor);
+  background: var(--whiteColor);
+}
+.home .homeContent .cardDiv .middleContent {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+.home .homeContent .cardDiv .middleContent .btn:hover {
+  color: var(--PrimaryColor);
+  background: var(--whiteColor);
+}
+.home .homeContent .cardDiv .rightContent {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.home .homeContent .cardDiv .rightContent img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .homeContent .cardDiv .rightContent .emailPhoneContact {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  bottom: 1rem;
+  left: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .home .homeContent .cardDiv {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 1.5rem 1rem;
+  }
+  .home .homeContent .cardDiv .leftContent {
+    border-right: none;
+  }
+  .home .homeContent .cardDiv .rightContent {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=home.css.map */

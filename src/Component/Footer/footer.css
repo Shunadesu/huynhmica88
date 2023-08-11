@@ -1,0 +1,211 @@
+:root {
+  --PrimaryColor: hsla(47, 68%, 38%, 0.836);
+  --SecondaryColor: hsla(41, 100%, 33%, 0.441);
+  --gradientColor: linear-gradient(to right, hsla(47, 68%, 38%, 0.836), hsla(41, 100%, 33%, 0.441));
+  --whiteColor: #fff;
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: rgb(240,240,240);
+  --cardBG: rgb(225,225,235);
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.footer .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.footer .videoDiv video {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .videoDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  mix-blend-mode: multiply;
+}
+.footer .secContent {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: auto;
+  row-gap: 2rem;
+  z-index: 5;
+}
+.footer .secContent .footerCard {
+  position: relative;
+  padding: 1rem 1rem 4rem;
+  gap: 3rem;
+  border-radius: 1rem;
+  background: var(--bodyColor);
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+.footer .secContent .footerCard .footerInfo {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.footer .secContent .footerCard .footerInfo .contactDiv {
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .text small {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--PrimaryColor);
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .text h2 {
+  color: var(--PrimaryColor);
+  font-size: 1.8rem;
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .inputDiv {
+  width: 100%;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .inputDiv input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 3rem;
+  border: 1px solid var(--PrimaryColor);
+  outline: none;
+  background: transparent;
+  color: var(--PrimaryColor);
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .inputDiv input::-moz-placeholder {
+  color: var(--SecondaryColor);
+  opacity: 0.9;
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .inputDiv input::placeholder {
+  color: var(--SecondaryColor);
+  opacity: 0.9;
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .inputDiv .btn {
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+  font-weight: 500;
+  gap: 0.5rem;
+}
+.footer .secContent .footerCard .footerInfo .contactDiv .inputDiv .btn .icon {
+  font-size: 18px;
+}
+.footer .secContent .footerCard .logoDiv .logo {
+  color: var(--blackColor);
+  font-weight: 500;
+}
+.footer .secContent .footerCard .logoDiv .logo .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  margin-left: 10px;
+}
+.footer .secContent .footerCard .footerPar {
+  font-size: 13px;
+  color: var(--textColor);
+}
+.footer .secContent .footerCard .footerLinks {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--PrimaryColor);
+  margin-bottom: 0.5rem;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .time {
+  padding-left: 5px;
+  color: var(--PrimaryColor) !important;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .time .icon {
+  margin-right: 5px;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.5s ease-in-out;
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--greyText);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
+  color: var(--SecondaryColor);
+  transform: translateX(7px);
+}
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
+}
+.footer .secContent .footerCard .footerDiv {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--SecondaryColor);
+  padding: 0.5rem 2rem;
+}
+.footer .secContent .footerCard .footerDiv small {
+  font-size: 10px;
+  color: var(--whiteColor);
+}
+
+@media screen and (max-width: 900px) {
+  .footer .pagePadding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer .secContent .footerCard {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 468px) {
+  .footer .secContent .footerCard .footerLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .pagePadding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

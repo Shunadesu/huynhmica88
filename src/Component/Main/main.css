@@ -1,0 +1,183 @@
+:root {
+  --PrimaryColor: hsla(47, 68%, 38%, 0.836);
+  --SecondaryColor: hsla(41, 100%, 33%, 0.441);
+  --gradientColor: linear-gradient(to right, hsla(47, 68%, 38%, 0.836), hsla(41, 100%, 33%, 0.441));
+  --whiteColor: #fff;
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: rgb(240,240,240);
+  --cardBG: rgb(225,225,235);
+}
+
+.main {
+  margin-top: 3.2rem;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .pagePadding {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.main .pagePadding .textDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main .pagePadding .textDiv .title {
+  flex: 1;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--PrimaryColor);
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  transition: 0.3s ease;
+}
+.main .pagePadding .textDiv .title:hover {
+  color: var(--SecondaryColor);
+  transform: translateX(5%);
+}
+.main .pagePadding .textDiv .line {
+  flex: 4;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--PrimaryColor);
+}
+.main .pagePadding .mainContent {
+  padding: 1rem;
+  background-color: var(--SecondaryColor);
+  border-radius: 1rem;
+}
+.main .pagePadding .mainContent .reTitle {
+  padding: 1rem;
+  display: flex;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+  color: var(--PrimaryColor);
+  margin: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.main .pagePadding .mainContent .reTitle:hover {
+  color: var(--SecondaryColor);
+  transform: scale(1.07, 1.07);
+}
+@media screen and (max-width: 900px) {
+  .main .pagePadding {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .main .pagePadding .textDiv .title {
+    font-size: 25px;
+    flex: 2;
+  }
+  .main .pagePadding .textDiv .line {
+    flex: 3;
+  }
+}
+@media screen and (max-width: 525px) {
+  .main .pagePadding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .main .pagePadding .textDiv .title {
+    font-size: 20px;
+    flex: 2;
+  }
+  .main .pagePadding .textDiv .line {
+    flex: 3;
+  }
+  .main .pagePadding .mainContent .reTitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.main .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  padding: 1rem;
+  overflow: hidden;
+}
+.main .singleDestination:hover {
+  background: #fff;
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .singleDestination .imageDiv {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.main .singleDestination .cardInfo {
+  padding: 1rem;
+}
+.main .singleDestination .cardInfo .destTitle {
+  color: var(--blackColor);
+  font-size: 25px;
+}
+.main .singleDestination .cardInfo .continent {
+  gap: 0.5rem;
+}
+.main .singleDestination .cardInfo .continent .icon {
+  color: var(--textColor);
+  font-size: 10px;
+}
+.main .singleDestination .cardInfo .continent .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .singleDestination .cardInfo .fees {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 1.5px solid var(--greyText);
+}
+.main .singleDestination .cardInfo .price {
+  font-size: 30px;
+  color: var(--blackColor);
+}
+.main .singleDestination .cardInfo .decs {
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.main .singleDestination .cardInfo .btn {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main .singleDestination .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 15px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,18 @@
+:root {
+  --PrimaryColor: hsla(47, 68%, 38%, 0.836);
+  --SecondaryColor: hsla(41, 100%, 33%, 0.441);
+  --gradientColor: linear-gradient(to right, hsla(47, 68%, 38%, 0.836), hsla(41, 100%, 33%, 0.441));
+  --whiteColor: #fff;
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDream: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: rgb(240,240,240);
+  --cardBG: rgb(225,225,235);
+}
+
+.map .mapDiv {
+  padding: 5rem 0;
+}
+/*# sourceMappingURL=map.css.map */

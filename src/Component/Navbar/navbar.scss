@@ -1,0 +1,176 @@
+:root{
+    --PrimaryColor: hsla(47, 68%, 38%, 0.836);
+    --SecondaryColor: hsla(41, 100%, 33%, 0.441);
+    --gradientColor: linear-gradient(to right, hsla(47, 68%, 38%, 0.836), hsla(41, 100%, 33%, 0.441));
+    --whiteColor: #fff;
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239,239,239);
+    --bodyColor: rgb(240,240,240);
+    --cardBG: rgb(225,225,235);
+}
+
+
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--whiteColor);
+    width: 100%;
+    padding: 1rem;
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.156);
+
+    .logoDiv{
+        color: var(--PrimaryColor);
+        
+        .logo{
+            gap: 1px;
+            color: var(--PrimaryColor);
+            font-weight: bolder;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 3px;
+            &:hover{
+                color: var(--SecondaryColor);
+            }
+        }
+    }
+
+    .navBar{
+        .navLists{
+            flex-direction: row;
+            gap: 1.5rem;
+            
+            .navItem{
+                a{
+                    color: var(--PrimaryColor);
+                    position: relative;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }   
+
+                .navLink::before,
+                .navLink::after{
+                    content: '';
+                    position: absolute;
+                    height: 3px;
+                    width: 0;
+                    background: var(--SecondaryColor);
+                    transition: 0.5s;
+                }
+    
+                .navLink::after{
+                    left: 0;
+                    bottom: -10px;
+                }
+    
+                .navLink::before{
+                    top: -10px;
+                    right: 0;
+                }
+    
+                .navLink:hover::after,
+                .navLink:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .closeNavbar{
+        display: none;
+    }
+
+    .toggleNavbar{
+        display: none;
+    }
+
+    @media screen and (max-width:768px) {
+        .logoDiv{
+            p{
+                display: none;
+            }
+        }
+
+        .navBar{
+            padding: 1rem;
+            position: absolute;
+            background: var(--whiteColorDream);
+            height: max-content;
+            width: 80%;
+            border-radius: 1rem;
+            top: -500rem;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.984);
+            transition: 0.3s ease;
+
+            .navLists{
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+                padding: 1.5rem 0;
+
+                .navItem{
+                    padding: 0.5rem 0;
+
+                    .navLink{
+                        color: var(--textColor);
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        
+                        &:hover{
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn{
+                    margin-top: 1rem;
+
+                    a{
+                        font-weight: 600;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+
+            .closeNavbar{
+                display: block;
+                position: absolute;
+                top: 0.5rem;
+                right: 1rem;
+                color: var(--PrimaryColor);
+
+                &:hover{
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+
+        .activeNavbar{
+            top: 5rem;
+        }
+        .toggleNavbar{
+            display: block;
+            .icon{
+                font-size: 25px;
+                color: var(--PrimaryColor);
+            }
+    
+            &:hover.icon{
+                color: var(--SecondaryColor);
+            }
+    
+        }
+    }
+
+}
