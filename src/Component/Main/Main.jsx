@@ -127,7 +127,7 @@ const Main = () => {
                     modules={[Grid, Pagination, Autoplay]}
                     breakpoints={{
                         //when window width is >= 768px
-                        375:{
+                        300:{
                             slidesPerView:1,
                         },
                         768:{
