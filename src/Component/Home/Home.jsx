@@ -33,7 +33,7 @@ const Home = () => {
                             Gia công sản phẩm theo thiết kế của khách hàng
                         </h1>
                         <p>Bằng tâm huyết của mình, HUYNH luôn thiết kế tỉ mỉ, chỉnh chu theo đúng tính chất của vật liệu mica, theo ý muốn của quý khách, từ những chiếc hộp vuông, đến những chiếc gương góc cạnh.</p>   
-                        <a href="tel:0523372202" className="btn">Gọi đặt hàng ngay!!</a>
+                        <a href="tel:0912788780" className="btn">Gọi đặt hàng ngay!!</a>
                     </div>
 
                     <div className="middleContent">
