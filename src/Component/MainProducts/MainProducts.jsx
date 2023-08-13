@@ -136,7 +136,7 @@ const MainProducts = () => {
                 modules={[Grid, Pagination, Autoplay]}
                     breakpoints={{
                         
-                        375:{
+                        300:{
                             slidesPerView:1,
                         },
                         768:{
