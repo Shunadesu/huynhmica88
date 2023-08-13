@@ -179,7 +179,7 @@ const MainProducts = () => {
                                             <p>{description}</p>
                                         </div>
 
-                                        <a href="https://zalo.me/0523372202">
+                                        <a href="https://zalo.me/0912788780">
                                             <button className="btn flex">
                                                     <AiOutlineShoppingCart className="icon"/>
                                                 <p>Đặt hàng qua Zalo</p>
